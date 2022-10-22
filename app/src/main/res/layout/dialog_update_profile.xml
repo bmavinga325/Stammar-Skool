@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:text="Update Profile"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.728"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.145">
+
+        <EditText
+            android:id="@+id/editUserName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/gray_bg"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="user_name"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="125dp" />
+
+        <EditText
+            android:id="@+id/editUserEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/gray_bg"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="190dp" />
+
+        <EditText
+            android:id="@+id/editUserPhone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/gray_bg"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="255dp" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/postProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:backgroundTint="@color/purple_500"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/purple_500"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSubmit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/purple_500"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

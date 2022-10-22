@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "150175448836",
+    "firebase_url": "https://stammerskool-3bd4d-default-rtdb.firebaseio.com",
+    "project_id": "stammerskool-3bd4d",
+    "storage_bucket": "stammerskool-3bd4d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150175448836:android:cbf0ea67c820f35e195a51",
+        "android_client_info": {
+          "package_name": "com.example.stammaskool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "150175448836-sn6msh2qjgjkq477mb0irfbdhh74udf6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUF5klnTGJxxfXUwZqcAgNQHnoG8G18W8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "150175448836-sn6msh2qjgjkq477mb0irfbdhh74udf6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

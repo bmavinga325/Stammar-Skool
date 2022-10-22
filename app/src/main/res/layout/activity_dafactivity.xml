@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".DAFActivity">
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/delay_time"
+                android:textColor="@android:color/white"
+                android:textStyle="bold|italic" />
+            <TextView
+                android:id="@+id/textViewDelay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@android:color/white"
+                android:textStyle="bold|italic"
+                tools:text="10ms" />
+        </LinearLayout>
+        <SeekBar
+            android:id="@+id/seekBarDelay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:duplicateParentState="false"
+            android:indeterminate="false"
+            android:max="200"
+            android:progress="10"
+            android:progressTint="#FFEB3B"
+            android:thumb="@drawable/ic_seek_bar_icon" />
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.162">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/echo"
+                android:textColor="@android:color/white"
+                android:textStyle="bold|italic" />
+            <TextView
+                android:id="@+id/textViewEcho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@android:color/white"
+                android:textStyle="bold|italic"
+                tools:text="1" />
+        </LinearLayout>
+        <SeekBar
+            android:id="@+id/seekBarEcho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:duplicateParentState="false"
+            android:indeterminate="false"
+            android:indeterminateTint="#A11010"
+            android:max="5"
+            android:progress="1"
+            android:progressTint="#FFEB3B"
+            android:thumb="@drawable/ic_seek_bar_icon" />
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/volume"
+                android:textColor="@android:color/white"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/textViewVolume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@android:color/white"
+                android:textStyle="bold|italic"
+                tools:text="1" />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekBarVolume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:duplicateParentState="false"
+            android:indeterminate="false"
+            android:indeterminateTint="#A11010"
+            android:max="10"
+            android:progress="5"
+            android:progressTint="#FFEB3B"
+            android:thumb="@drawable/ic_seek_bar_icon" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/noise"
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"></LinearLayout>
+
+        <SeekBar
+            android:id="@+id/background_noise_reduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:duplicateParentState="false"
+            android:indeterminate="false"
+            android:indeterminateTint="#A11010"
+            android:max="5"
+            android:progress="2"
+            android:progressTint="#FFEB3B"
+            android:thumb="@drawable/ic_seek_bar_icon" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.645">
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:text="@string/button_start"
+            android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/buttonStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_stop_background_color"
+            android:text="@string/button_stop"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textViewRecorderStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/stop"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.731" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
